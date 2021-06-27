@@ -10,7 +10,7 @@ b=arr[n];
 arr[n]=arr[c];
 arr[c]=b;
 }
-void ssort(int arr[], int l){
+ssort(int [], int){
 for(int i=0;i<=l-1;i++){
 swap_max(arr,l,i);}
 }
