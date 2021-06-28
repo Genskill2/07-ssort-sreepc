@@ -1,4 +1,4 @@
-void swap_max(int arr[], int l, int n){
+void swap_max(int arr[], int l, int n ){
 int c;
 int b;
 int amax=arr[n];
