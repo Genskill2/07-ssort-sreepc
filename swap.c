@@ -1,5 +1,10 @@
 #include <stdio.h>
-#include <cs50.h>
+#include <assert.h>
+#include <stdlib.h>
+
+void swap_max(int arr[], int l, int n );
+
+void ssort(int arr[], int l);
 
 void swap_max(int arr[], int l, int n ){
 int c;
