@@ -1,24 +1,20 @@
-#include <stdio.h>
-#include <assert.h>
-#include <stdlib.h>
-
-void swap_max(int arr[], int l, int n );
-
-void ssort(int arr[], int l);
-
-void swap_max(int arr[], int l, int n ){
-int c;
-int b;
-int amax=arr[n];
-for(int i=n+1;i<l;i++){
-if(arr[i]>amax){
-amax=arr[i];
-c=i;}}
-b=arr[n];
-arr[n]=arr[c];
-arr[c]=b;
-}
-void ssort(int arr[], int l){
-for(int i=0;i<=l-1;i++){
-swap_max(arr,l,i);}
-}
+void swap_max(int x[],int l,int y){
+  int largest = 0;
+  int *t=&x[y];
+  int *q;
+  for(int i=y;i<l;i++){
+   if(x[i]>largest){
+    largest=x[i];
+    q=&x[i];
+    }
+   else
+    continue;
+    }
+    int n =*q;
+    *q=*t;
+    *t=n;
+    }
+  void ssort(int m[],int l){
+   for(int i=0;i<l;i++)
+    swap_max(m,l,i);
+   }
